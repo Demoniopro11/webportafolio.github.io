@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Académico | Base de Datos II</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="galaxy-bg"></canvas>
+    <!-- Splash Screen -->
+    <div id="splash">
+        <canvas id="particles"></canvas>
+
+        <div class="splash-content">
+            <img src="https://upla.edu.pe/web/wp-content/uploads/2024/10/logo-8.png" alt="Logo">
+            <h2 class="splash-text">Portafolio Académico</h2>
+        </div>
+    </div>
+
+    <!-- Page Loader -->
+    <div id="pageLoader">
+        <div class="loader-spinner"></div>
+        <h2 style="color: var(--text-color); font-weight: 500; font-size: 1.2rem; letter-spacing: 2px;">Cargando...</h2>
+    </div>
+
+
+    <!-- Navbar -->
+    <nav class="navbar animate-fade-in">
+        <a href="./index.html" class="logo">
+            <img src="https://upla.edu.pe/web/wp-content/uploads/2024/10/logo-8.png" alt="UPLA Logo">
+            Mi Portafolio
+        </a>
+        <ul class="nav-links">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Unidad 1 <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="./semana1.html" class="dropdown-item">Semana 1</a>
+                    <a href="./semana2.html" class="dropdown-item">Semana 2</a>
+                    <a href="./semana3.html" class="dropdown-item">Semana 3</a>
+                    <a href="./semana4.html" class="dropdown-item">Semana 4</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Unidad 2 <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="./semana5.html" class="dropdown-item">Semana 5</a>
+                    <a href="./semana6.html" class="dropdown-item">Semana 6</a>
+                    <a href="./semana7.html" class="dropdown-item">Semana 7</a>
+                    <a href="./semana8.html" class="dropdown-item">Semana 8</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Unidad 3 <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="./semana9.html" class="dropdown-item">Semana 9</a>
+                    <a href="./semana10.html" class="dropdown-item">Semana 10</a>
+                    <a href="./semana11.html" class="dropdown-item">Semana 11</a>
+                    <a href="./semana12.html" class="dropdown-item">Semana 12</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Unidad 4 <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="./semana13.html" class="dropdown-item">Semana 13</a>
+                    <a href="./semana14.html" class="dropdown-item">Semana 14</a>
+                    <a href="./semana15.html" class="dropdown-item">Semana 15</a>
+                    <a href="./semana16.html" class="dropdown-item">Semana 16</a>
+                </div>
+            </li>
+            <li class="nav-item" id="authNav">
+                <a href="./login.html" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i> Iniciar Sesión</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero hidden-animate">
+            <!-- VIDEO BACKGROUND -->
+            <video autoplay muted loop playsinline class="hero-video">
+                <source
+                    src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260217_030345_246c0224-10a4-422c-b324-070b7c0eceda.mp4"
+                    type="video/mp4">
+            </video>
+
+            <!-- OVERLAY -->
+            <div class="hero-overlay"></div>
+
+            <div
+                style="text-align: center; margin-bottom: 2rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                <span
+                    style="background: rgba(168, 85, 247, 0.2); color: var(--accent-light); padding: 0.5rem 1.2rem; border-radius: 20px; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 0 15px rgba(168, 85, 247, 0.3); border: 1px solid rgba(168, 85, 247, 0.4);"><i
+                        class="fas fa-laptop-code"></i> Ingeniería de Sistemas</span>
+                <span
+                    style="background: rgba(16, 185, 129, 0.2); color: var(--success-color); padding: 0.5rem 1.2rem; border-radius: 20px; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 0 15px rgba(16, 185, 129, 0.3); border: 1px solid rgba(16, 185, 129, 0.4);"><i
+                        class="fas fa-database"></i> Base de Datos II</span>
+            </div>
+            <div style="text-align: center; margin-bottom: 1rem;">
+                <h1 class="page-title">Jair Nuñez Michel</h1>
+            </div>
+
+            <h2
+                style="text-align: center; margin-top: 2rem; margin-bottom: 2rem; color: var(--text-color); font-weight: 600;">
+                Bienvenido a mi Portafolio Académico</h2>
+            <div class="hero-content hidden-animate" style="text-align: center; margin-bottom: 3rem;">
+                <p
+                    style="font-size: 1.15rem; color: var(--text-muted); max-width: 800px; margin: 0 auto; line-height: 1.8;">
+                    Este es un espacio interactivo dedicado a recopilar y mostrar todos mis avances, tareas y proyectos
+                    realizados durante el curso de <strong>Base de Datos II</strong> a lo largo de las 16 semanas de
+                    estudio.
+                </p>
+            </div>
+
+            <!-- Search Filter -->
+            <div class="hidden-animate" style="max-width: 500px; margin: 0 auto 3rem auto; position: relative;">
+                <i class="fas fa-search"
+                    style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted);"></i>
+                <input type="text" id="searchWeekIndex" class="form-control"
+                    placeholder="Buscar semana (ej: 'Semana 1', 'Modelo Relacional')..."
+                    style="padding-left: 2.5rem; border-radius: 20px; text-align: center; font-size: 1.05rem;">
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Portafolio Académico - Base de Datos II. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Global Elements -->
+    <div id="toastContainer"></div>
+
+    <div class="modal-overlay" id="lightboxModal">
+        <div class="modal-content-box">
+            <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+            <div id="lightboxContent" class="media-preview-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
