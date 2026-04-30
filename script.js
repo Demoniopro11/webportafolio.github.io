@@ -36,14 +36,15 @@ let archivos = [
     week: 2,
     fileName: "Modelo_Entidad_Relación.pdf"
   },
-  {
+   {
     id: 5,
-    title: "Semana 3 - Presentacion Canva",
-    desc: "Diapositiva de la semana 3",
-    url: "https://canva.link/bgliy7ms9q3hf92",
-    type: "link",
-    week: 3
-  }
+    title: "Semana 3 - Resumen y Presentación",
+    desc: "Resumen y Presentación",
+    data: "https://prezi.com/view/UcDWANeQlhI6RIorzDlk/?referral_token=lMygC9lnB3FN", // Enlace web
+    type: "link", // Cambié el tipo a link
+    week: 3,
+    fileName: "Ver presentación"
+  },
 
 ];
 const getFiles = () => archivos;
