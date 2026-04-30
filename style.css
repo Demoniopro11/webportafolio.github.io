@@ -1029,9 +1029,70 @@ main>div.animate-fade-in {
     height: 30px;
   }
 
-  /* OCULTAR MENÚ (ya lo haces pero lo reforzamos) */
+  /* 🍔 MENÚ HAMBURGUESA */
+  .menu-toggle {
+    display: flex;
+  }
+
+  /* 🔥 MENÚ LATERAL (FIX) */
   .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100vh;
+    background: rgba(10, 10, 25, 0.98);
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    padding: 90px 20px 30px;
+    gap: 1.5rem;
+    transition: right 0.4s ease;
+    z-index: 1500;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  /* ITEMS */
+  .nav-item {
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    padding-bottom: 10px;
+  }
+
+  .nav-link {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* DROPDOWN */
+  .dropdown-menu {
     display: none;
+    flex-direction: column;
+    margin-top: 10px;
+    padding-left: 10px;
+    gap: 8px;
+  }
+
+  .dropdown-item {
+    font-size: 0.95rem;
+    opacity: 0.8;
+  }
+
+  .nav-item.active .dropdown-menu {
+    display: flex;
+  }
+
+  /* LOGIN */
+  #authNav {
+    margin-top: 20px;
+  }
+
+  #authNav .btn {
+    width: 100%;
+    text-align: center;
   }
 
   /* HERO */
@@ -1053,14 +1114,14 @@ main>div.animate-fade-in {
     font-size: 0.95rem;
   }
 
-  /* INPUT BUSCADOR */
+  /* BUSCADOR */
   #searchWeekIndex {
     font-size: 0.9rem;
   }
 
   /* CARDS */
   .cards-grid {
-    grid-template-columns: 1fr; /* 🔥 1 sola columna */
+    grid-template-columns: 1fr;
     padding: 0 15px;
     gap: 1.5rem;
   }
@@ -1088,7 +1149,7 @@ main>div.animate-fade-in {
     margin: 0 10px;
   }
 
-  /* MODAL (PDF / VIDEO) */
+  /* MODAL */
   .modal-content-box {
     width: 95vw;
     height: 80vh;
@@ -1096,7 +1157,7 @@ main>div.animate-fade-in {
 
 }
 
-/* 📱 EXTRA PEQUEÑO (celulares chicos) */
+/* 📱 EXTRA PEQUEÑO */
 @media (max-width: 480px) {
 
   .page-title {
