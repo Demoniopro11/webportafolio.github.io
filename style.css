@@ -1290,3 +1290,25 @@ main>div.animate-fade-in {
   height: 100%;
   z-index: -1; /* 🔥 ENVÍA AL FONDO */
 }
+/*NOMBRE PRINCIPAL (EFECTO WOW)*/
+.page-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  letter-spacing: 1px;
+
+  background: linear-gradient(90deg, #a855f7, #22c55e, #3b82f6);
+  background-size: 200% auto;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: gradientMove 5s linear infinite;
+
+  text-shadow: 0 0 30px rgba(168, 85, 247, 0.4);
+}
+
+/* ANIMACIÓN DEL GRADIENTE */
+@keyframes gradientMove {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
