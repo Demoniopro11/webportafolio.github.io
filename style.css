@@ -1336,3 +1336,19 @@ main>div.animate-fade-in {
     transform: translateY(0);
   }
 }
+
+#searchWeekIndex {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 30px;
+  padding: 12px 20px;
+  color: white;
+
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+#searchWeekIndex:focus {
+  border-color: #a855f7;
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
+}
