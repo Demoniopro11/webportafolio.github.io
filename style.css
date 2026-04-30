@@ -1009,3 +1009,106 @@ main>div.animate-fade-in {
 #filesContainer i {
   filter: drop-shadow(0 0 10px rgba(168, 85, 247, 0.6));
 }
+
+/* =========================
+   📱 RESPONSIVE PRO (MÓVIL)
+   ========================= */
+
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .navbar .logo {
+    font-size: 1.2rem;
+  }
+
+  .navbar .logo img {
+    height: 30px;
+  }
+
+  /* OCULTAR MENÚ (ya lo haces pero lo reforzamos) */
+  .nav-links {
+    display: none;
+  }
+
+  /* HERO */
+  .hero-content-wrapper {
+    padding-top: 160px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .page-title {
+    font-size: 1.8rem;
+  }
+
+  .hero h2 {
+    font-size: 1.1rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  /* INPUT BUSCADOR */
+  #searchWeekIndex {
+    font-size: 0.9rem;
+  }
+
+  /* CARDS */
+  .cards-grid {
+    grid-template-columns: 1fr; /* 🔥 1 sola columna */
+    padding: 0 15px;
+    gap: 1.5rem;
+  }
+
+  .card {
+    border-radius: 16px;
+  }
+
+  .card-img-preview {
+    height: 180px;
+    font-size: 3rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-desc {
+    font-size: 0.9rem;
+  }
+
+  /* FORMULARIOS */
+  .form-container {
+    padding: 1.5rem;
+    margin: 0 10px;
+  }
+
+  /* MODAL (PDF / VIDEO) */
+  .modal-content-box {
+    width: 95vw;
+    height: 80vh;
+  }
+
+}
+
+/* 📱 EXTRA PEQUEÑO (celulares chicos) */
+@media (max-width: 480px) {
+
+  .page-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-content-wrapper {
+    padding-top: 140px;
+  }
+
+  .card-img-preview {
+    height: 160px;
+  }
+
+}
