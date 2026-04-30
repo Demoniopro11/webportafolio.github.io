@@ -1312,3 +1312,27 @@ main>div.animate-fade-in {
   0% { background-position: 0% center; }
   100% { background-position: 200% center; }
 }
+
+.hero h2 {
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-weight: 600;
+  color: #e5e7eb;
+
+  text-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+.hero-content-wrapper {
+  animation: fadeUp 1.2s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
