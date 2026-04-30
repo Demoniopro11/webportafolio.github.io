@@ -1193,3 +1193,31 @@ main>div.animate-fade-in {
   }
 
 }
+
+/* 🔥 FIX DEFINITIVO MENU HAMBURGUESA */
+
+.menu-toggle {
+  display: none;
+  position: fixed; /* 🔥 clave */
+  top: 20px;
+  right: 20px;
+  z-index: 9999; /* 🔥 súper arriba */
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 28px;
+  height: 3px;
+  background: white;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+/* mostrar en celular */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+}
