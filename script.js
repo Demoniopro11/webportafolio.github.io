@@ -749,7 +749,7 @@ toggle.addEventListener("click", () => {
   nav.classList.toggle("active");
 });
 
-/* dropdown en móvil */
+/* abrir unidades en móvil */
 document.querySelectorAll(".nav-item > .nav-link").forEach(link => {
   link.addEventListener("click", function(e) {
     if (window.innerWidth <= 768) {
