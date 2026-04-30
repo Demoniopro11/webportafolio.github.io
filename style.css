@@ -1387,3 +1387,16 @@ main>div.animate-fade-in {
 
   opacity: 0.7;
 }
+.hero h2,
+.hero p {
+  text-shadow: 0 0 15px rgba(255,255,255,0.08);
+}
+
+/* 🔽 TÍTULO DE SEMANA (más pequeño y elegante) */
+.week-title {
+  font-size: 1.4rem; /* antes seguro estaba 2rem o más */
+  font-weight: 600;
+  color: #e5e7eb;
+
+  letter-spacing: 0.5px;
+}
